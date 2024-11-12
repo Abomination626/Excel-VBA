@@ -1,5 +1,11 @@
 Attribute VB_Name = "Extract_Email_Function"
 Function ExtractEmails(inputRange As Range) As String
+'******************************************
+'THIS CODE CAN EXTRACT EMAIL FROM UNCLEAN
+'DATA, USING REGEX.
+'CAN BE DIRECTLY USED IN CELLS USING
+'FUNCTION =ExtractEmails()
+'******************************************
     Dim regex As Object
     Dim matches As Object
     Dim cell As Range
