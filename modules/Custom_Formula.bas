@@ -5,14 +5,13 @@ Sub ApplyCustomFormula()
 'FORMULA TO PROCESS SELECTED CELLS
 '******************************************
     Dim customFormula As String
-    Dim selectedRange As Range
     
     ' Prompt the user to enter the custom formula
     customFormula = InputBox("Enter the custom formula (e.g., /100+15):", "Custom Formula")
     
-    ' Get the selected range
-    Set selectedRange = Application.Selection
+    For Each cell In Selection.Cells
     
-    ' Apply the custom formula to the selected cells
-    selectedRange.Formula = "=" & selectedRange.Address & customFormula
+    cell.Formula = "=" & cell.Value & customFormula
+    
+    Next cell
 End Sub
