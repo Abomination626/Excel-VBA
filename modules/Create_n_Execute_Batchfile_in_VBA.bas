@@ -1,5 +1,12 @@
 Attribute VB_Name = "Create_Batchfile_VBA"
 Sub Main()
+'******************************************
+'THIS CODE CAN HELP EXECUTE UTIL SCRIPTS
+'USING CMD OR ANY TERMINAL APPLICATION
+'MODIFY AS NEEDED
+'
+'******************************************
+
     '  Modify this to desired name
     BatchFileName = "AnyName.bat"
     
@@ -60,3 +67,4 @@ Sub CreateBatchFile(BatchFileName)
     Set file = Nothing
     
 End Sub
+
